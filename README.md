@@ -1,3 +1,5 @@
+![Banner](https://github.com/ignfer/rollback/blob/main/banner.png)
+
 # Rollback
 
 - `transactions you actually control`  
