@@ -1,0 +1,468 @@
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Rollback'*/[0m
+  [1m[35m (269.0ms)[0m  [1m[35mCREATE DATABASE "rollback_development" ENCODING = 'unicode' /*application='Rollback'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Rollback'*/[0m
+  [1m[35m (64.3ms)[0m  [1m[35mCREATE DATABASE "rollback_test" ENCODING = 'unicode' /*application='Rollback'*/[0m
+Started GET "/up" for ::1 at 2025-09-28 23:27:28 -0300
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='Rollback'*/[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 5.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2025-09-28 23:27:39 -0300
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2025-09-28 23:27:47 -0300
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2025-09-28 23:27:48 -0300
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2025-09-28 23:27:58 -0300
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2025-09-28 23:29:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2025-09-28 23:29:22 -0300
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2025-09-28 23:29:38 -0300
+Processing by Rails::HealthController#show as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-09-28 23:29:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/up" for ::1 at 2025-09-28 23:29:44 -0300
+Processing by Rails::HealthController#show as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2025-09-28 23:29:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-09-28 23:29:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4619930823441732225) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-09-29 02:41:44.054617', '2025-09-29 02:41:44.054619') RETURNING "key" /*application='Rollback'*/[0m
+Migrating to CreateWallets (20250929023642)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Rollback'*/[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "wallets" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "short_name" character varying, "currency" character varying NOT NULL, "balance" decimal(15,2) DEFAULT 0.0 NOT NULL, "is_credit_card" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250929023642') RETURNING "version" /*application='Rollback'*/[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT /*application='Rollback'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4619930823441732225) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Rollback'*/[0m
+  [1m[35m (54.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rollback_development" /*application='Rollback'*/[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[35mSET search_path TO public /*application='Rollback'*/[0m
+  [1m[35m (57.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rollback_test" /*application='Rollback'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Rollback'*/[0m
+  [1m[35m (64.8ms)[0m  [1m[35mCREATE DATABASE "rollback_development" ENCODING = 'unicode' /*application='Rollback'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Rollback'*/[0m
+  [1m[35m (65.5ms)[0m  [1m[35mCREATE DATABASE "rollback_test" ENCODING = 'unicode' /*application='Rollback'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='Rollback'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "wallets" CASCADE /*application='Rollback'*/[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "wallets" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "short_name" character varying, "currency" character varying NOT NULL, "balance" decimal(15,2) DEFAULT 0.0 NOT NULL, "is_credit_card" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Rollback'*/[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+  [1m[35m (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250929023642) /*application='Rollback'*/[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-09-29 02:48:51.889654', '2025-09-29 02:48:51.889657') RETURNING "key" /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'c821c079388d031f372425b5a67a6579b33766c7', '2025-09-29 02:48:51.898649', '2025-09-29 02:48:51.898693') RETURNING "key" /*application='Rollback'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4619930823441732225) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Rollback'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4619930823441732225) /*application='Rollback'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Rollback'*/[0m
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (11.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 16.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | GC: 0.0ms)
+Completed 200 OK in 76ms (Views: 20.2ms | ActiveRecord: 14.4ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-28 23:53:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:14 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 2.8ms | GC: 0.7ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 5.0ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | GC: 0.7ms)
+Completed 200 OK in 45ms (Views: 11.3ms | ActiveRecord: 3.4ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:16 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 5.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:17 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:18 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 5.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:20 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 13ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/wallets" for 127.0.0.1 at 2025-09-28 23:53:21 -0300
+Processing by WalletsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "commit" => "Create Wallet"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='Rollback',controller='wallets'*/[0m
+  ↳ app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+  [1m[36mWallet Create (1.9ms)[0m  [1m[32mINSERT INTO "wallets" ("name", "short_name", "currency", "balance", "is_credit_card", "created_at", "updated_at") VALUES (NULL, NULL, NULL, 0.0, FALSE, '2025-09-29 02:53:21.364489', '2025-09-29 02:53:21.364489') RETURNING "id" /*action='create',application='Rollback',controller='wallets'*/[0m
+  ↳ app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK /*action='create',application='Rollback',controller='wallets'*/[0m
+  ↳ app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 2.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::NotNullViolation (PG::NotNullViolation: ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (caea2da4-5d62-4f0e-9421-65e7e6b101b6, null, null, null, 0.00, f, 2025-09-29 02:53:21.364489, 2025-09-29 02:53:21.364489).
+)
+Caused by: PG::NotNullViolation (ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (caea2da4-5d62-4f0e-9421-65e7e6b101b6, null, null, null, 0.00, f, 2025-09-29 02:53:21.364489, 2025-09-29 02:53:21.364489).
+)
+
+Information for: ActiveRecord::NotNullViolation (PG::NotNullViolation: ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (caea2da4-5d62-4f0e-9421-65e7e6b101b6, null, null, null, 0.00, f, 2025-09-29 02:53:21.364489, 2025-09-29 02:53:21.364489).
+):
+  
+
+Information for cause: PG::NotNullViolation (ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (caea2da4-5d62-4f0e-9421-65e7e6b101b6, null, null, null, 0.00, f, 2025-09-29 02:53:21.364489, 2025-09-29 02:53:21.364489).
+):
+  
+app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+app/controllers/wallets_controller.rb:26:in 'WalletsController#create'
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:24 -0300
+Processing by WalletsController#index as HTML
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-09-28 23:53:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 7.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | GC: 0.0ms)
+Completed 200 OK in 106ms (Views: 10.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 5.3ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:24 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (1.1ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 7.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:26 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 6.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:26 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:28 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:29 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 3.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:30 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 2.6ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:33 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 3.8ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 4.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | GC: 0.0ms)
+Completed 200 OK in 13ms (Views: 5.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:34 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 7.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:35 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:35 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 5.3ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 5.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:36 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 3.8ms | GC: 2.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 2.0ms)
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:39 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 3.8ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 8.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:39 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:40 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 3.4ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 4.7ms | GC: 1.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 1.0ms)
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started POST "/wallets" for 127.0.0.1 at 2025-09-28 23:53:41 -0300
+Processing by WalletsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "commit" => "Create Wallet"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='Rollback',controller='wallets'*/[0m
+  ↳ app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+  [1m[36mWallet Create (1.6ms)[0m  [1m[32mINSERT INTO "wallets" ("name", "short_name", "currency", "balance", "is_credit_card", "created_at", "updated_at") VALUES (NULL, NULL, NULL, 0.0, FALSE, '2025-09-29 02:53:41.260149', '2025-09-29 02:53:41.260149') RETURNING "id" /*action='create',application='Rollback',controller='wallets'*/[0m
+  ↳ app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*action='create',application='Rollback',controller='wallets'*/[0m
+  ↳ app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::NotNullViolation (PG::NotNullViolation: ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (c80b7722-e376-4200-8fd3-3edad0d7ab47, null, null, null, 0.00, f, 2025-09-29 02:53:41.260149, 2025-09-29 02:53:41.260149).
+)
+Caused by: PG::NotNullViolation (ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (c80b7722-e376-4200-8fd3-3edad0d7ab47, null, null, null, 0.00, f, 2025-09-29 02:53:41.260149, 2025-09-29 02:53:41.260149).
+)
+
+Information for: ActiveRecord::NotNullViolation (PG::NotNullViolation: ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (c80b7722-e376-4200-8fd3-3edad0d7ab47, null, null, null, 0.00, f, 2025-09-29 02:53:41.260149, 2025-09-29 02:53:41.260149).
+):
+  
+
+Information for cause: PG::NotNullViolation (ERROR:  null value in column "name" of relation "wallets" violates not-null constraint
+DETAIL:  Failing row contains (c80b7722-e376-4200-8fd3-3edad0d7ab47, null, null, null, 0.00, f, 2025-09-29 02:53:41.260149, 2025-09-29 02:53:41.260149).
+):
+  
+app/controllers/wallets_controller.rb:27:in 'block in WalletsController#create'
+app/controllers/wallets_controller.rb:26:in 'WalletsController#create'
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:41 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 11.1ms | GC: 1.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | GC: 1.9ms)
+Completed 200 OK in 20ms (Views: 13.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:53:42 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:53:43 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets/new" for 127.0.0.1 at 2025-09-28 23:55:58 -0300
+Processing by WalletsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/new.html.erb within layouts/application
+  Rendered wallets/_form.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered wallets/new.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/wallets" for 127.0.0.1 at 2025-09-28 23:55:59 -0300
+Processing by WalletsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wallets/index.html.erb within layouts/application
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets" /*action='index',application='Rollback',controller='wallets'*/[0m
+  ↳ app/views/wallets/index.html.erb:8
+  Rendered wallets/index.html.erb within layouts/application (Duration: 7.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 8.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
